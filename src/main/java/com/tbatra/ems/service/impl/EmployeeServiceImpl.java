@@ -24,6 +24,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     public EmployeeDTO createEmployee(EmployeeDTO employeeDTO) {
         Employee employee = EmployeeMapper.mapToEmployee(employeeDTO);
 
+        employeeRepository.save(employee);
+
         return EmployeeMapper.mapToEmployeeDTO(employeeRepository.save(employee));
 
     }
@@ -59,6 +61,8 @@ public class EmployeeServiceImpl implements EmployeeService {
         employee.setFirstName(employeeDTO.getFirstName());
         employee.setLastName(employeeDTO.getLastName());
         employee.setEmail(employeeDTO.getEmail());
+
+        employeeRepository.save(employee);
 
         EmployeeDTO upatedEmploeeDTO = EmployeeMapper.mapToEmployeeDTO(employee);
 
