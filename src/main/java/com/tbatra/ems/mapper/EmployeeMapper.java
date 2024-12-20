@@ -21,7 +21,7 @@ public class EmployeeMapper {
         return new Employee(
                 employeeDTO.getId(),
                 employeeDTO.getFirstName(),
-                employeeDTO.getLasteName(),
+                employeeDTO.getLastName(),
                 employeeDTO.getEmail()
         );
     }

@@ -57,7 +57,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                         new NotFoundException("Employee does not exist with given id : " + employeeId));
 
         employee.setFirstName(employeeDTO.getFirstName());
-        employee.setLastName(employeeDTO.getLasteName());
+        employee.setLastName(employeeDTO.getLastName());
         employee.setEmail(employeeDTO.getEmail());
 
         EmployeeDTO upatedEmploeeDTO = EmployeeMapper.mapToEmployeeDTO(employee);

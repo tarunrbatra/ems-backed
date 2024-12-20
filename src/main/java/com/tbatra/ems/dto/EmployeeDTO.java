@@ -4,7 +4,7 @@ public class EmployeeDTO {
 
     private long id;
     private String firstName;
-    private String lasteName;
+    private String lastName;
 
     private String email;
 
@@ -23,7 +23,7 @@ public class EmployeeDTO {
     public EmployeeDTO(long id, String firstName, String lasteName, String email) {
         this.id = id;
         this.firstName = firstName;
-        this.lasteName = lasteName;
+        this.lastName = lasteName;
         this.email = email;
     }
 
@@ -39,12 +39,12 @@ public class EmployeeDTO {
         this.firstName = firstName;
     }
 
-    public String getLasteName() {
-        return lasteName;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLasteName(String lasteName) {
-        this.lasteName = lasteName;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
 }
